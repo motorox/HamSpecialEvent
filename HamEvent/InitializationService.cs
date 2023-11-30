@@ -32,7 +32,7 @@ namespace HamEvent
             {
                 var context = serviceProvider.GetRequiredService<HamEventContext>();
 
-                await context.Database.MigrateAsync(cancellationToken);
+                //await context.Database.MigrateAsync(cancellationToken);
             }
 
             // ... Other initialization logic of the application. (e.g. a seeding of an initial data)

@@ -6,6 +6,25 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// PrimeNG stuff
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { DropdownModule } from 'primeng/dropdown';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { RatingModule } from 'primeng/rating';
+import { ToolbarModule } from 'primeng/toolbar';
+import { ConfirmationService } from 'primeng/api';
+import { PanelModule } from 'primeng/panel';
+import { ToastModule } from 'primeng/toast';
+import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -40,6 +59,7 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
@@ -63,7 +83,23 @@ export function createTranslateLoader(http: HttpClient) {
       { path: ':id/:secret', component: AdminQSOsComponent, pathMatch: 'full' },
 
       { path: ':id', component: QSOsComponent, pathMatch: 'full' },
-    ])
+    ]),
+    InputTextModule,
+    DialogModule,
+    ToolbarModule,
+    ConfirmDialogModule,
+    RatingModule,
+    InputNumberModule,
+    InputTextareaModule,
+    RadioButtonModule,
+    DropdownModule,
+    ButtonModule,
+    PanelModule,
+    TableModule,
+    ToastModule,
+    MenubarModule,
+    MenuModule
+
   ],
   providers: [],
   exports: [SanitizedHtmlPipe],

@@ -1,5 +1,5 @@
 <div class="px-4 text-center border-bottom">
- 
+
   <h1 class="display-4 fw-bold text-body-emphasis">{{'HamEventTitle' | translate}}</h1>
   <div class="col mx-auto">
     <p class="lead mb-4">{{'HamEventDescription' | translate}}</p>
@@ -8,3 +8,50 @@
     </div>
   </div>
 </div>
+
+<div class="card flex justify-content-center">
+  <p-panel header="Header">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </p-panel>
+</div>
+<p-panel header="Scoped Panel">
+  <p class="m-0">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</p-panel>
+
+
+<p-panel [toggleable]="true">
+  <ng-template pTemplate="header">
+    GeeksforGeeks Header
+  </ng-template>
+
+  <p>
+    Angular PrimeNG is a framework used with angular to create
+    components with great styling and this framework is very
+    easy to use and is used to make responsive websites.
+  </p>
+
+  <ng-template pTemplate="footer">
+    GeeksforGeeks Footer
+  </ng-template>
+</p-panel>
+<p-panel [toggleable]="true">
+  <ng-template pTemplate="header">
+    GeeksforGeeks Header
+  </ng-template>
+
+  <p>
+    <img alt="gfg" height="200px" src="https://media.geeksforgeeks.org/wp-content/uploads/20220807214719/geeksclasseslivecourseoverviewimage-300x289.png" />
+
+    <img alt="gfg" height="200px" src="https://media.geeksforgeeks.org/img-practice/banner/test-series-bundle-course-overview-image.png?v=1665205091" />
+  </p>
+
+  <ng-template pTemplate="footer">
+    GeeksforGeeks Footer
+  </ng-template>
+</p-panel>
